@@ -5,9 +5,9 @@ node_modules
 .idea
 sassdoc
 
-src/assets/theme/*/*.css
-src/assets/layout/css/*/*.css
-src/assets/sass/theme/designer
+# src/assets/theme/*/*.css
+# src/assets/layout/css/*/*.css
+# src/assets/sass/theme/designer
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
