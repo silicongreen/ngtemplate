@@ -29,6 +29,8 @@
                             "src/upload.php"
                         ],
                         "styles": [
+                            "src/assets/theme/blue/theme-dark.scss",
+                            "src/assets/layout/css/blue/layout-dark.scss",
                             "src/styles.scss"
                         ],
                         "scripts": [
