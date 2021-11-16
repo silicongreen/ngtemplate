@@ -1,0 +1,28 @@
+<div [ngClass]="{'layout-inline-menu': true, 'layout-inline-menu-active':appMain.activeInlineProfile}" *ngIf="!appMain.isMobile() && (appMain.isStatic() || appMain.isSlim() || appMain.isSidebar())">
+    <a class="layout-inline-menu-action" (click)="appMain.activeInlineProfile = !appMain.activeInlineProfile">
+        <img src="assets/layout/images/profile-image.png" alt="avatar" style="width: 44px; height: 44px;">
+        <span class="layout-inline-menu-text">Gene Russell</span>
+        <i class="layout-inline-menu-icon pi pi-angle-down"></i>
+    </a>
+
+    <ul class="layout-inline-menu-action-panel" [@inline]="appMain.activeInlineProfile ? 'visibleAnimated' : 'hiddenAnimated'">
+        <li class="layout-inline-menu-action-item">
+            <a>
+                <i class="pi pi-power-off pi-fw"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+        <li class="layout-inline-menu-action-item">
+            <a>
+                <i class="pi pi-cog pi-fw"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <li class="layout-inline-menu-action-item">
+            <a>
+                <i class="pi pi-user pi-fw"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+    </ul>
+</div>
